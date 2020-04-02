@@ -25,7 +25,7 @@ const lightbox   = document.querySelector('.lightbox'),
           dataDiv.innerHTML = data;
 
           let name = this.src.split('images/')[1];
-          let name2 = name.split('_square.jpg')[0];
+          let name2 = name.split('_square.jpg')[0] + '.jpg';
           
           if(this.classList.contains('bruh')){
             lightImg.src = `images/${name2}`;

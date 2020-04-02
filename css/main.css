@@ -603,9 +603,6 @@ iframe {
   .hide {
     display: block !important;
   }
-  .hideM {
-    display: none !important;
-  }
   .header {
     height: 280px;
     -webkit-box-orient: vertical;
@@ -764,7 +761,7 @@ iframe {
     width: 80%;
   }
   .hideD {
-    display: block;
+    display: none;
   }
   .contactForm {
     margin-bottom: 50px;

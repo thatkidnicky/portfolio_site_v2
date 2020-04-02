@@ -69,7 +69,7 @@ if(isset($_POST['submit'])){
       
       <label for="message">Message</label>
       <textarea id="message" name="msg" placeholder="Write me a message.."></textarea>
-      <button type="submit" name='submit'>send</button>
+      <button name='submit'>send</button>
     </form>
 </div>
 

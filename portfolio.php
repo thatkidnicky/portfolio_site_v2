@@ -40,7 +40,7 @@
             <div id="mockups">
                 <h1>MOCKUPS</h1>
                     <div id="clothingApp">
-                        <img class="clothing hideM bruh" id="1" src="images/clothing_app_square.jpg" alt="Clothing App">
+                        <img class="clothing bruh" id="1" src="images/clothing_app_square.jpg" alt="Clothing App">
                         <img class="clothing hideD" id="1" src="images/clothing_app.jpg" alt="Clothing App">
                         <h3 id="projectName">Clothing App</h3>
                         <div class="data">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div id="glowBalls">
-                        <img class="glow hideM bruh" id="2" src="images/glow_balls_square.jpg" alt="Glowing Balls 3D">
+                        <img class="glow bruh" id="2" src="images/glow_balls_square.jpg" alt="Glowing Balls 3D">
                         <img class="glow hideD" id="2" src="images/glow_balls_square.jpg" alt="Glowing Balls 3D">
                         <h3 id="projectName">Glowing Balls</h3>
                         <div class="data">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div id="beerMashup">
-                        <img class="beer hideM bruh" id="3" src="images/beer_mashup_square.jpg" alt="Beer Mashup">
+                        <img class="beer bruh" id="3" src="images/beer_mashup_square.jpg" alt="Beer Mashup">
                         <img class="beer hideD" id="3" src="images/beer_mashup.jpg" alt="Beer Mashup">
                         <h3 id="projectName">Beer Mashup</h3>
                         <div class="data">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div id="roku">
-                        <img class="roku hideM bruh" id="8" src="images/roku_mockup_square.jpg" alt="Roku Mockup">
+                        <img class="roku bruh" id="8" src="images/roku_mockup_square.jpg" alt="Roku Mockup">
                         <img class="roku hideD" id="8" src="images/roku_mockup.jpg" alt="Roku Mockup">
                         <h3 id="projectName">Roku Mockup</h3>
                         <div class="data">

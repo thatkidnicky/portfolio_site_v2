@@ -22,10 +22,10 @@
     
     <nav class="navContainer hide">
         <ul class="nav">
-        <li><a href="index">HOME</a></li>
-            <li><a href="about">ABOUT</a></li>
-            <li><a href="portfolio">PORTFOLIO</a></li>
-            <li><a href="contact">CONTACT</a></li>
+        <li><a href="index.php">HOME</a></li>
+            <li><a href="about.php">ABOUT</a></li>
+            <li><a href="portfolio.php">PORTFOLIO</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
         </ul>
     </nav>
     </header>

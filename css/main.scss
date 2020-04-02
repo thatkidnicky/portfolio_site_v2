@@ -1,0 +1,733 @@
+.hidden{
+    display: none !important;
+}
+
+
+
+.hideD{
+    display: none;
+}
+
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    video{
+        width: 100%;
+        margin: 40px auto;
+    }
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    .image{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .close{
+        position: absolute;
+        z-index: 111;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+
+    .dataDiv{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        width: 100%;
+        background: rgba(0, 0, 0, .4);
+        text-align: center;
+
+        h2{
+            margin: 5px;
+        }
+        h3{
+            margin: 3px;
+        }
+        h4{
+            margin: 3px;
+        }
+
+        .description{
+            width: 95%;
+        }
+    }
+}
+
+
+
+
+
+//header
+.header{
+    background: gray;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+
+    .logoSection{
+        height: 70%;
+        width:  50%;
+        margin: auto;
+        cursor: pointer;
+        svg{
+            height: 100%;
+        }
+    }
+
+    .burger{
+        font-size: 30px;
+        color: white;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .navContainer{
+        position: absolute;
+        opacity: 1;
+        z-index: 1;
+        top: 100px;
+        background: gray;
+        border-top: solid 2px white;
+        width: 100%;
+
+        transition: all .1s ease;
+        .nav{
+            list-style: none;
+            li{
+                margin-top: 10px;
+                font-weight: lighter;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .hide{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .logo{
+        display: block;
+        color:white !important;
+        fill: white !important;
+        stroke: white !important;
+    }
+
+    .hideM{
+        display: none;
+    }
+}
+
+//footer
+footer{
+    border-top: solid 2px gray;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: gray;
+    img{
+        height: 60px;
+        margin: auto;
+        align-self: center;
+        transform: translateX(15%);
+    }
+    .copySoc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .social{
+        display: flex;
+        align-self: flex-end;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        a{
+            color: gray;
+        }
+        &:hover{
+            opacity: .8;
+        }
+        i{
+            margin-right: 10px;
+        }
+    }
+    .copyright{
+        align-self: flex-end;
+        margin: 0px;
+        font-size: 9px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+//home
+.welcomeSection{
+    color: gray;
+    height: 100px;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 20px;
+        font-weight: lighter;
+        margin-right: 5px;
+        width: 70%;
+    }
+
+    .headshot{
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        background:  url('../images/headshot.jpg') center no-repeat;
+        background-size: 100%;
+    }
+}
+
+.enter{
+    color: gray;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 60px 10px;
+}
+
+//contact
+.contactInfo{
+    text-align: center;
+    color: gray;
+    .bigText{
+       font-weight: lighter !important; 
+       font-style: italic;
+    }
+    .littleText{
+        font-weight: lighter;
+        padding: 0px 10px;
+    }
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: gray;
+    margin-bottom: 50px;
+    input, textarea{
+        width: 100%;
+        margin:0 auto;
+        margin: 10px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 3px;
+        border: solid 1px gray;
+        font-family: 'Lato';
+    }
+    label, button{
+        margin: 0px 10px;
+    }
+
+    button{
+        margin: 0 auto;
+        background: white;
+        border: solid 1px gray;
+        padding: 5px 15px;
+        color: gray;
+        border-radius: 3px;
+
+        &:hover{
+            background: gray;
+            color: white;
+        }
+    }
+}
+
+//about
+.aboutSection{
+    color: grey;
+    text-align: left;
+    margin-bottom: 60px;
+
+    p{
+        margin-right: 30px;
+        margin-left: 30px;
+        word-spacing: 0.75px;
+        text-align: left;
+        margin-left: 40px;
+    }
+    .portrait{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-style: italic;
+        margin-left: 40px;
+        letter-spacing: .5px;
+        font-weight: lighter !important;
+    }
+    h1{
+        margin-left: 40px;
+        letter-spacing: .5px;
+        margin-top: 40px;
+    }
+}
+
+.educationSection{
+    text-align: left;
+
+    letter-spacing: .25px;
+    margin: 40px;
+    p{
+    
+        font-weight: lighter;
+    }
+    .western{
+        margin-bottom: 40px;
+    }
+    .fanshawe{
+        margin-bottom: 50px;
+    }
+    h1{
+        margin-bottom: 30px;
+        letter-spacing: .5px;
+        text-align: left;
+    }
+    h3{
+        font-style: italic;
+    }
+    .grad{
+        font-style: italic;
+    }
+}
+
+//portfolio
+.portfolioSection{
+    color: gray;
+
+    .data{
+        display: none;
+    }
+    
+    img{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    h3{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-style: italic;
+    letter-spacing: .75px;
+    }
+    h1{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    }
+
+    #videography{
+        text-align: center;
+        margin-bottom: 40px;
+        button{
+            margin: 0 auto;
+            background: white;
+            color: gray;
+            font-size: 18px;
+            border: solid 1px gray;
+            padding: 10px 25px;
+            cursor: pointer;
+            transition: all .1s ease;
+            &:hover{
+                opacity: .8;
+            }
+        }
+        .description{
+            width: 80%;
+            margin: 0 auto;
+            }
+
+            h2,p{
+                width: 100%;
+                text-align: center;
+            }
+        
+    }
+}
+
+#olympicPromo,#carMorph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .videoData1,.videoData2{
+        margin: 0 auto;
+    }
+    .videoData2{
+        margin-bottom: 40px;
+    }
+}
+
+.lightbox{
+    .description{
+        width: 85%;
+        margin: 0 auto;
+        word-spacing: 1px;
+    }
+}
+
+form{
+    margin: auto;
+
+    max-width: 700px;
+
+    button{
+        font-size: 18px;
+        margin: 30px auto;
+        margin-bottom: 40px;
+        padding: 10px 25px;
+        cursor: pointer;
+
+        transition: all .1s ease;
+
+        &:hover{
+            background: gray;
+            color: white;
+        }     
+    }
+}
+
+//TABLET
+@media only screen and (min-width: 600px){
+
+//header
+.header{
+    height: 120px;
+
+    .navContainer{
+        top: 120px;
+    }
+    li{
+        font-size: 18px;
+    }
+}
+
+//footer
+footer{
+    border-top: solid 2px gray;
+    height: 140px;
+    img{
+        height: 60%;
+        margin-top: 45px;
+        margin-bottom: 10px;
+        transform: translateX(15%);
+    }
+    .copyright{
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+
+    i
+    {
+        font-size: 20px;
+    }
+}
+
+//home
+    .welcomeSection{
+        h1{
+            font-size: 30px;
+            width: 70%;
+        }
+    
+        .headshot{
+            height: 110px;
+            width: 110px;
+            border-radius: 100%;
+            background:  url('../images/headshot.jpg') center no-repeat;
+            background-size: 100%;
+        }
+    }
+
+    .enter{
+        font-size: 17px;
+        padding: 60px 40px;
+    }
+
+    //contact
+    .contactForm{
+        margin-bottom: 150px;
+    }
+    .contactInfo{
+        margin-top: 100px;
+    }
+    h1{
+        margin-bottom: 60px;
+        font-size: 40px;
+    }
+    p{
+        font-size: 19px;
+    }
+}
+
+//about
+.aboutSection{
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+.educationSection{
+    p{
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+    .fanshawe{
+        margin-bottom: 50px;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 28px;
+    }
+}
+
+//portfolio
+.portfolioSection{
+    h3{
+    font-size: 28px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    }
+    h1{
+        margin-bottom: 100px;
+        margin-top: 100px;
+    } 
+}
+
+//video stuff
+.promoVid{
+    width: 100%;
+    max-width: 1200px;
+    height: 56.25vh;
+    // padding-bottom: 56.25%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+iframe{
+     width: 100%;
+     height: 100%;
+}
+
+
+
+
+
+//DESKTOP
+@media only screen and (min-width: 900px){
+    //header
+
+    .hide{
+        display: block !important;
+    }
+
+    .hideM{
+        display: none !important;
+    }
+.header{
+    height: 280px;
+
+    flex-direction: column;
+
+    background: white;
+
+    .logoSection{
+        width: inherit;
+        padding-top: 20px;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .navContainer{
+        position: static;
+        display: flex !important;
+        opacity: 1 !important;
+        flex-direction: row;
+        border: none;
+        background: white;
+        pointer-events: all;
+    }
+    .nav{
+        margin: 20px auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a{
+            color: gray !important;
+        }
+
+        li{
+            font-size: 20px;
+            margin-right: 50px; 
+            transition: all .2s ease;
+
+            &:hover{
+            text-decoration: underline;
+            }
+        }
+    }
+    .logoSection{
+        margin: 20px auto;
+
+        .logo{
+            color:gray !important;
+        fill: gray !important;
+        stroke: gray !important;
+
+        .cls-1,.cls-2,.cls-3,.cls-4{
+            color:gray !important;
+        fill: gray !important;
+        stroke: gray !important;
+        }
+        }
+
+        .hideM{
+            display: none !important;
+        }
+    }
+}
+
+    .welcomeSection{
+        justify-content: space-between;
+
+        margin: 50px auto;
+
+        height: 200px;
+
+        h1{
+            width: 70%;
+            font-size: 36px;
+        }
+        
+        .headshot{
+            height: 250px;
+            width: 250px;
+        }
+    }
+
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .enter{
+        font-size: 24px;
+        margin: auto;
+    }
+
+
+
+
+    .aboutSection{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .educationSection{
+        .school{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         flex-wrap: nowrap;
+
+         div{
+            width: 30%;
+         }
+        } 
+     }
+
+    .portfolioSection{
+        margin: 30px auto;
+        div{
+            h1{
+                width: 100%;
+                font-size: 36px;
+            }
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            div{
+                width: 22%;
+            }
+        }
+        #videography{
+            div{
+                width: 80%;
+            }
+        }
+    }
+    .hideD{
+        display: block;
+    }
+
+    .contactForm{
+        margin-bottom: 50px;
+    }
+
+    .contactInfo{
+        margin-top: 50px;
+    }
+
+    .portrait{
+        margin-left: 30px;
+    }
+}

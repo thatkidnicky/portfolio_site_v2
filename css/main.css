@@ -1,0 +1,779 @@
+.hidden {
+  display: none !important;
+}
+
+.hideD {
+  display: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  color: gray;
+}
+
+body video {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.lightbox .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox .close {
+  position: absolute;
+  z-index: 111;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.lightbox .dataDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.lightbox .dataDiv h2 {
+  margin: 5px;
+}
+
+.lightbox .dataDiv h3 {
+  margin: 3px;
+}
+
+.lightbox .dataDiv h4 {
+  margin: 3px;
+}
+
+.lightbox .dataDiv .description {
+  width: 95%;
+}
+
+.header {
+  background: gray;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .logoSection {
+  height: 70%;
+  width: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.header .logoSection svg {
+  height: 100%;
+}
+
+.header .burger {
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+.header .navContainer {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  top: 100px;
+  background: gray;
+  border-top: solid 2px white;
+  width: 100%;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.header .navContainer .nav {
+  list-style: none;
+}
+
+.header .navContainer .nav li {
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.header .navContainer .nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .navContainer .nav a:hover {
+  opacity: .8;
+}
+
+.header .hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header .logo {
+  display: block;
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+}
+
+.header .hideM {
+  display: none;
+}
+
+footer {
+  border-top: solid 2px gray;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: gray;
+}
+
+footer img {
+  height: 60px;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+footer .copySoc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+footer .social a {
+  color: gray;
+}
+
+footer .social:hover {
+  opacity: .8;
+}
+
+footer .social i {
+  margin-right: 10px;
+}
+
+footer .copyright {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0px;
+  font-size: 9px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.welcomeSection {
+  color: gray;
+  height: 100px;
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcomeSection h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-right: 5px;
+  width: 70%;
+}
+
+.welcomeSection .headshot {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background: url("../images/headshot.jpg") center no-repeat;
+  background-size: 100%;
+}
+
+.enter {
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+  font-weight: lighter;
+  font-style: italic;
+  padding: 60px 10px;
+}
+
+.contactInfo {
+  text-align: center;
+  color: gray;
+}
+
+.contactInfo .bigText {
+  font-weight: lighter !important;
+  font-style: italic;
+}
+
+.contactInfo .littleText {
+  font-weight: lighter;
+  padding: 0px 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  color: gray;
+  margin-bottom: 50px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 0 auto;
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: solid 1px gray;
+  font-family: 'Lato';
+}
+
+form label, form button {
+  margin: 0px 10px;
+}
+
+form button {
+  margin: 0 auto;
+  background: white;
+  border: solid 1px gray;
+  padding: 5px 15px;
+  color: gray;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background: gray;
+  color: white;
+}
+
+.aboutSection {
+  color: grey;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.aboutSection p {
+  margin-right: 30px;
+  margin-left: 30px;
+  word-spacing: 0.75px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.aboutSection .portrait {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.aboutSection h3 {
+  font-style: italic;
+  margin-left: 40px;
+  letter-spacing: .5px;
+  font-weight: lighter !important;
+}
+
+.aboutSection h1 {
+  margin-left: 40px;
+  letter-spacing: .5px;
+  margin-top: 40px;
+}
+
+.educationSection {
+  text-align: left;
+  letter-spacing: .25px;
+  margin: 40px;
+}
+
+.educationSection p {
+  font-weight: lighter;
+}
+
+.educationSection .western {
+  margin-bottom: 40px;
+}
+
+.educationSection .fanshawe {
+  margin-bottom: 50px;
+}
+
+.educationSection h1 {
+  margin-bottom: 30px;
+  letter-spacing: .5px;
+  text-align: left;
+}
+
+.educationSection h3 {
+  font-style: italic;
+}
+
+.educationSection .grad {
+  font-style: italic;
+}
+
+.portfolioSection {
+  color: gray;
+}
+
+.portfolioSection .data {
+  display: none;
+}
+
+.portfolioSection img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.portfolioSection h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-style: italic;
+  letter-spacing: .75px;
+}
+
+.portfolioSection h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.portfolioSection #videography {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolioSection #videography button {
+  margin: 0 auto;
+  background: white;
+  color: gray;
+  font-size: 18px;
+  border: solid 1px gray;
+  padding: 10px 25px;
+  cursor: pointer;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.portfolioSection #videography button:hover {
+  opacity: .8;
+}
+
+.portfolioSection #videography .description {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolioSection #videography h2, .portfolioSection #videography p {
+  width: 100%;
+  text-align: center;
+}
+
+#olympicPromo, #carMorph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#olympicPromo .videoData1, #olympicPromo .videoData2, #carMorph .videoData1, #carMorph .videoData2 {
+  margin: 0 auto;
+}
+
+#olympicPromo .videoData2, #carMorph .videoData2 {
+  margin-bottom: 40px;
+}
+
+.lightbox .description {
+  width: 85%;
+  margin: 0 auto;
+  word-spacing: 1px;
+}
+
+form {
+  margin: auto;
+  max-width: 700px;
+}
+
+form button {
+  font-size: 18px;
+  margin: 30px auto;
+  margin-bottom: 40px;
+  padding: 10px 25px;
+  cursor: pointer;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+form button:hover {
+  background: gray;
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    height: 120px;
+  }
+  .header .navContainer {
+    top: 120px;
+  }
+  .header li {
+    font-size: 18px;
+  }
+  footer {
+    border-top: solid 2px gray;
+    height: 140px;
+  }
+  footer img {
+    height: 60%;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+  footer .copyright {
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+  footer i {
+    font-size: 20px;
+  }
+  .welcomeSection h1 {
+    font-size: 30px;
+    width: 70%;
+  }
+  .welcomeSection .headshot {
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    background: url("../images/headshot.jpg") center no-repeat;
+    background-size: 100%;
+  }
+  .enter {
+    font-size: 17px;
+    padding: 60px 40px;
+  }
+  .contactForm {
+    margin-bottom: 150px;
+  }
+  .contactInfo {
+    margin-top: 100px;
+  }
+  h1 {
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+  p {
+    font-size: 19px;
+  }
+}
+
+.aboutSection h3 {
+  font-size: 30px;
+}
+
+.aboutSection p {
+  font-size: 25px;
+}
+
+.educationSection p {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.educationSection .fanshawe {
+  margin-bottom: 50px;
+}
+
+.educationSection h1 {
+  margin-bottom: 30px;
+}
+
+.educationSection h3 {
+  font-size: 28px;
+}
+
+.portfolioSection h3 {
+  font-size: 28px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.portfolioSection h1 {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.promoVid {
+  width: 100%;
+  max-width: 1200px;
+  height: 56.25vh;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .hide {
+    display: block !important;
+  }
+  .hideM {
+    display: none !important;
+  }
+  .header {
+    height: 280px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+  }
+  .header .logoSection {
+    width: inherit;
+    padding-top: 20px;
+  }
+  .header .burger {
+    display: none;
+  }
+  .header .navContainer {
+    position: static;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    opacity: 1 !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: none;
+    background: white;
+    pointer-events: all;
+  }
+  .header .nav {
+    margin: 20px auto;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .header .nav a {
+    color: gray !important;
+  }
+  .header .nav li {
+    font-size: 20px;
+    margin-right: 50px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  .header .nav li:hover {
+    text-decoration: underline;
+  }
+  .header .logoSection {
+    margin: 20px auto;
+  }
+  .header .logoSection .logo {
+    color: gray !important;
+    fill: gray !important;
+    stroke: gray !important;
+  }
+  .header .logoSection .logo .cls-1, .header .logoSection .logo .cls-2, .header .logoSection .logo .cls-3, .header .logoSection .logo .cls-4 {
+    color: gray !important;
+    fill: gray !important;
+    stroke: gray !important;
+  }
+  .header .logoSection .hideM {
+    display: none !important;
+  }
+  .welcomeSection {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 50px auto;
+    height: 200px;
+  }
+  .welcomeSection h1 {
+    width: 70%;
+    font-size: 36px;
+  }
+  .welcomeSection .headshot {
+    height: 250px;
+    width: 250px;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .enter {
+    font-size: 24px;
+    margin: auto;
+  }
+  .aboutSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .educationSection .school {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .educationSection .school div {
+    width: 30%;
+  }
+  .portfolioSection {
+    margin: 30px auto;
+  }
+  .portfolioSection div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolioSection div h1 {
+    width: 100%;
+    font-size: 36px;
+  }
+  .portfolioSection div div {
+    width: 22%;
+  }
+  .portfolioSection #videography div {
+    width: 80%;
+  }
+  .hideD {
+    display: block;
+  }
+  .contactForm {
+    margin-bottom: 50px;
+  }
+  .contactInfo {
+    margin-top: 50px;
+  }
+  .portrait {
+    margin-left: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

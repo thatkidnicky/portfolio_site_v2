@@ -147,8 +147,8 @@
         <img class="footerLogo" src="images/portfolio_logo.svg" alt="Portfolio Logo">
     <div class="copySoc">
         <div class="social">
-            <a href="https:/instagram.com/thatkidnicky"><i class="fab fa-instagram"></i></a>
-            <a href="https:/linkedin.com/in/nick-shahfazlollahi"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/thatkidnicky/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nick-shahfazlollahi/"><i class="fab fa-linkedin"></i></a>
         </div>
         <h5 class="copyright">Nick Shahfazlollahi©. 2019 All Rights Reserved</h5>
     </div>

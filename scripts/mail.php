@@ -13,11 +13,11 @@ function contactMail($name, $email, $subject, $msg){
     $mail->Port = 465;
     $mail->SMTPAuth=true;
 
-    $mail->Username=''; // gmail (same gmail)
-    $mail->Password=''; // gmail password
+    $mail->Username='shahfazlollahinick@gmail.com'; // gmail (same gmail)
+    $mail->Password='Kauaihawaii1'; // gmail password
 
     $mail->addAddress($email);
-    $mail->setFrom(''); //gmail (same gmail)
+    $mail->setFrom('shahfazlollahinick@gmail.com'); //gmail (same gmail)
     
 
     $mail->isHTML(true);
@@ -32,6 +32,5 @@ function contactMail($name, $email, $subject, $msg){
         $message = $mail->ErrorInfo;
     }else{
         $message = 'Thank you for the message!';
-        header('Location: submit.php');
     }
 }
